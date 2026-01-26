@@ -4,7 +4,7 @@ A professional, responsive website for LACE UP Foundation - empowering youth thr
 
 ## 🎯 Mission
 
-LACE UP Foundation addresses the mental health crisis facing youth in urban communities through a collaborative youth wellness and basketball initiative that combines basketball culture, mental performance training, creative expression, and social-emotional learning.
+LACE UP Foundation's mission is to empower the youth and build communities through a collaborative youth wellness and basketball initiative that combines basketball culture, mental performance training, creative expression, and social-emotional learning to equip young people with tools to navigate adversity, build resilience, and strengthen their personal and community identity.
 
 **Tagline:** In everything you do, LACE UP.
 
