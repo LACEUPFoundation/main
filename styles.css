@@ -99,9 +99,9 @@ body::before {
     padding: 0 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 70px;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-logo {
@@ -1580,18 +1580,38 @@ section::before {
 .merch-inner {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
     align-items: center;
+    gap: var(--spacing-md);
+    max-width: 780px;
+    margin: 0 auto;
 }
 
 .merch-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.merch-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: var(--spacing-md);
     width: 100%;
-    max-width: 700px;
-    text-align: center;
-    align-items: center;
+    max-width: 680px;
+}
+
+.merch-subtitle {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--electric-yellow);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px rgba(255, 230, 0, 0.4);
 }
 
 .merch-description {
@@ -1601,22 +1621,6 @@ section::before {
     opacity: 0.85;
     max-width: 600px;
 }
-    font-family: var(--font-display);
-    font-size: 2rem;
-    color: var(--electric-yellow);
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-shadow: 0 0 20px rgba(255, 230, 0, 0.4);
-    margin-top: -1.5rem;
-}
-
-.merch-description {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: var(--light-glow);
-    opacity: 0.85;
-    max-width: 480px;
-}
 
 .merch-promo-box {
     background: rgba(255, 230, 0, 0.06);
@@ -1624,6 +1628,7 @@ section::before {
     box-shadow: 0 0 30px rgba(255, 230, 0, 0.08);
     padding: 1.5rem 2rem;
     clip-path: polygon(3% 0%, 100% 0%, 97% 100%, 0% 100%);
+    width: 100%;
 }
 
 .merch-promo-label {
@@ -1662,8 +1667,10 @@ section::before {
 
 .merch-img {
     width: 100%;
+    max-width: 680px;
     height: auto;
     display: block;
+    margin: 0 auto;
     object-fit: contain;
     border: 1px solid rgba(255, 230, 0, 0.2);
     box-shadow:
@@ -1681,11 +1688,7 @@ section::before {
 
 @media (max-width: 768px) {
     .merch-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .merch-visual {
-        order: -1;
+        gap: var(--spacing-sm);
     }
 
     .merch::after {
