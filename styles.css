@@ -142,20 +142,22 @@ body::before {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 0.6rem;
+    gap: 0.4rem;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-menu a {
     color: var(--light-glow);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: var(--glow-transition);
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.6rem;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-menu a::before {
@@ -1643,11 +1645,12 @@ section::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    width: 100%;
 }
+
+.merch-img {
     width: 100%;
     height: auto;
-    max-width: 100%;
     display: block;
     object-fit: contain;
     border: 1px solid rgba(255, 230, 0, 0.2);
