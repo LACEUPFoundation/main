@@ -142,7 +142,7 @@ body::before {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: var(--spacing-md);
+    gap: 0.6rem;
     align-items: center;
 }
 
@@ -150,11 +150,11 @@ body::before {
     color: var(--light-glow);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: var(--glow-transition);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     position: relative;
 }
 
@@ -1643,12 +1643,13 @@ section::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
-
-.merch-img {
     width: 100%;
-    max-width: 560px;
+    height: auto;
+    max-width: 100%;
     display: block;
+    object-fit: contain;
     border: 1px solid rgba(255, 230, 0, 0.2);
     box-shadow:
         0 0 40px rgba(255, 230, 0, 0.1),
@@ -1663,21 +1664,6 @@ section::before {
     transform: scale(1.02);
 }
 
-.merch-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: linear-gradient(135deg, var(--electric-yellow), var(--neon-cyan));
-    color: var(--deep-space);
-    font-family: var(--font-display);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-}
-
 @media (max-width: 768px) {
     .merch-inner {
         grid-template-columns: 1fr;
@@ -1685,11 +1671,6 @@ section::before {
 
     .merch-visual {
         order: -1;
-    }
-
-    .merch-badge {
-        top: 0.5rem;
-        right: 0.5rem;
     }
 
     .merch::after {
