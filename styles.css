@@ -96,15 +96,17 @@ body::before {
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
+    gap: 1rem;
 }
 
 .nav-logo {
-    height: 60px;
+    height: 45px;
+    flex-shrink: 0;
     filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
     transition: var(--transition);
 }
@@ -1576,9 +1578,9 @@ section::before {
 }
 
 .merch-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
     align-items: center;
 }
 
@@ -1586,9 +1588,19 @@ section::before {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    align-items: center;
 }
 
-.merch-subtitle {
+.merch-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--light-glow);
+    opacity: 0.85;
+    max-width: 600px;
+}
     font-family: var(--font-display);
     font-size: 2rem;
     color: var(--electric-yellow);
