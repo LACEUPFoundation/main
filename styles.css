@@ -147,6 +147,7 @@ body::before {
     gap: 0.4rem;
     align-items: center;
     flex-wrap: nowrap;
+    margin-left: 0;
 }
 
 .nav-menu a {
@@ -1667,7 +1668,7 @@ section::before {
 
 .merch-img {
     width: 100%;
-    max-width: 680px;
+    max-width: 480px;
     height: auto;
     display: block;
     margin: 0 auto;
