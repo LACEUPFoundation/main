@@ -91,9 +91,10 @@
   .sec-head{max-width:46ch;margin-bottom:clamp(48px,6vw,80px)}
   .prog-head{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;margin-bottom:clamp(48px,6vw,80px)}
   .prog-photo{aspect-ratio:4/5}
+  .prog-photo img{object-position:center top}
   @media(max-width:900px){
     .prog-head{grid-template-columns:1fr;gap:34px}
-    .prog-photo{aspect-ratio:4/3}
+    .prog-photo{aspect-ratio:4/5;max-height:70vh}
   }
   h2{font-variation-settings:'wdth' 95;font-weight:700;font-size:clamp(2rem,3.8vw,3.1rem);margin-bottom:22px;letter-spacing:-.03em}
   .lede{font-size:1.12rem;color:var(--body-grey);font-weight:300;line-height:1.8}
